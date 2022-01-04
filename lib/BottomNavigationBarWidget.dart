@@ -1,7 +1,6 @@
 
 // ignore_for_file: file_names
 
-import 'cart_view.dart';
 import 'home_view.dart';
 import 'search.dart';
 import 'package:flutter/material.dart';
@@ -24,11 +23,14 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
 
   @override
   void initState() {
+    //اضافة الصفحات اللى هيتم انشائها فيما بعد
     _dynamicPageList = [
       Search(),
-      CartView(),
-      HomeView(),
-      CartView(),
+      Search(),
+      Search(),
+      Search(),
+
+
     ];
 
     super.initState();
@@ -36,6 +38,7 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
 
   @override
   Widget build(BuildContext context) {
+
    setState(() {
      _index=widget.nam;
    });
