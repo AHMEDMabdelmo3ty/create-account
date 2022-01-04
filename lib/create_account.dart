@@ -20,14 +20,12 @@ class _CreateAccountState extends State<CreateAccount> {
           padding: const EdgeInsets.all(15),
           height: double.infinity,
           width: double.infinity,
-          decoration: BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                HexColor("#F99DB9"),
-                HexColor("#FFFfff"),
-              ])),
+          decoration: const BoxDecoration(
+            gradient: LinearGradient( begin: Alignment.topCenter, end: Alignment.bottomCenter ,colors:[
+              Color.fromRGBO(249, 157, 185, 1.0),
+              Color.fromRGBO(253, 220, 230, 1.0)
+            ]),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -96,7 +94,7 @@ class _CreateAccountState extends State<CreateAccount> {
       decoration: BoxDecoration(
           color: HexColor("#FDDCE6"),
           borderRadius: BorderRadius.circular(30),
-          border: Border.all(color: HexColor("#ff707070"), width: 2)),
+       ),
       child: TextFormField(
         textDirection: TextDirection.rtl,
         onSaved: (s) {

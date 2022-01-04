@@ -1,5 +1,7 @@
+import 'package:create_account/login_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'BottomNavigationBarWidget.dart';
 import 'create_account.dart';
 
 void main() {
@@ -12,9 +14,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
 
-      home: CreateAccount(),
+      home: BottomNavigationBarWidget(0),
     );
   }
 }
